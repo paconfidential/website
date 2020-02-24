@@ -5,93 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PA Confidential</title>
+  <meta name="description" content="Secretarial Services, anywhere • Lyn Prendergast">
   <link rel="stylesheet" href="dist/main.css" />
 </head>
 
 <body>
   <div id="overlay"></div>
   <div id="container">
-    <div id="blocks">
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-
-      <!-- <div id="name">
-            <div>
-              PA Confidential<br /><span>Lyn Prendergast</span>
-              <a href="mailto:lynpaconf@gmail.com">lynpaconf@gmail.com</a>
-            </div>
-            <div id="emailinside">
-              <a href="mailto:lynpaconf@gmail.com">lynpaconf@gmail.com</a>
-            </div>
-          </div> -->
-      <div id="services">
-        <div>secretarial services <i>anywhere</i></div>
-      </div>
-      <div id="book">
-        <div>book keeping</div>
-      </div>
-      <div id="business">
-        <div>business mentoring</div>
-      </div>
-      <div id="research">
-        <div>research</div>
-      </div>
-      <div id="database">
-        <div>database services</div>
-      </div>
-      <div id="events">
-        <div>event management</div>
-      </div>
-      <div id="email" class="noeffect">
-        <div>
-          <a href="mailto:lynpaconf@gmail.com">lynpaconf@gmail.com</a>
-        </div>
-      </div>
-    </div>
     <div id="list" class="noeffect">
       <div class="row name">
         <div>
           <div id="name">
-            <div>
-              PA Confidential<br /><span>Lyn Prendergast</span>
-              <!-- <a href="mailto:lynpaconf@gmail.com">lynpaconf@gmail.com</a> -->
-            </div>
+            <div>PA Confidential<br /><span>Lyn Prendergast</span></div>
           </div>
         </div>
       </div>
       <div class="row slogan">
         <div>
-          <div id="slogan">
-            secretarial services <i>anywhere</i>
-          </div>
+          <div id="slogan">secretarial services <i>anywhere</i></div>
         </div>
       </div>
-      <div class='row list'>
+      <div class="row list">
         <div>
           <ol>
             <!-- <li>Secretarial Services</li> -->
@@ -109,7 +43,7 @@
             <li>Database design</li>
           </ol>
           <div class="mail">
-            Get in touch today:<br>
+            Get in touch today:<br />
             <a href="mailto:lynpaconf@gmail.com">lynpaconf@gmail.com</a>
           </div>
         </div>
@@ -121,65 +55,6 @@
       </div>
     </div>
   </div>
-
-
-  <div id="circ"></div>
-  <div id="circ"></div>
-  <div id="circ"></div>
-  <div id="circ"></div>
-  <div id="circ"></div>
-
-  <script>
-    var domIsReady = (function (domIsReady) {
-      var isBrowserIeOrNot = function () {
-        return !document.attachEvent ||
-          typeof document.attachEvent === "undefined" ?
-          "not-ie" :
-          "ie";
-      };
-
-      domIsReady = function (callback) {
-        if (callback && typeof callback === "function") {
-          if (isBrowserIeOrNot() !== "ie") {
-            document.addEventListener("DOMContentLoaded", function () {
-              return callback();
-            });
-          } else {
-            document.attachEvent("onreadystatechange", function () {
-              if (document.readyState === "complete") {
-                return callback();
-              }
-            });
-          }
-        } else {
-          console.error("The callback is not a function!");
-        }
-      };
-
-      return domIsReady;
-    })(domIsReady || {});
-
-    (function (document, window, domIsReady, undefined) {
-      domIsReady(function () {
-        var children = document.getElementById("blocks").children;
-        for (var i in children) {
-          if (typeof children[i].addEventListener === "function") {
-            children[i].addEventListener("mouseenter", function (ev) {
-              this.classList.toggle("hover");
-            });
-          }
-        }
-        var reload = function () {
-          for (var i in children) {
-            if (typeof children[i].addEventListener === "function") {
-              if (Math.random() > 0.5) children[i].classList.toggle("hover");
-            }
-          }
-        };
-        // setInterval(reload, 3000);
-      });
-    })(document, window, domIsReady);
-  </script>
 </body>
 
 </html>
