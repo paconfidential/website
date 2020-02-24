@@ -117,6 +117,7 @@ a[href^="mailto:"] {
   padding: 0.2em;
   background: #f3ff4b;
   font-size: 14px;
+  font-style: normal;
   &:hover {
     background: @fg;
     color: #f3ff4b;
@@ -389,6 +390,10 @@ a[href^="mailto:"] {
   background: transparent !important;
   z-index: 0;
   margin-top: 4rem;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
