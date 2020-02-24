@@ -10,5 +10,8 @@
     "sugarss": "^2.0.0",
     "webpack": "^4.41.5"
   },
-  "browserslist": [">0.2%"]
+  "browserslist": [
+    ">0.2%"
+  ],
+  "devDependencies": {}
 }
